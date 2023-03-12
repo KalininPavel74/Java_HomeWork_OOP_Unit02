@@ -105,7 +105,6 @@ public class Competition {
         logger.warning("");
         for(IMobileObject m: mobileObjects) {
             logger.warning(fotofinish.get(m).toString());
-            logger.info(fotofinish.get(m).toString());
         }
     }
 }

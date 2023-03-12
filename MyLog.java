@@ -31,7 +31,9 @@ public class MyLog {
         fh.setLevel(Level.INFO); // все что ниже INFO не работает, зараза.
         //fh.setLevel(Level.FINE);
         //fh.setLevel(Level.WARNING);
-        logger.addHandler(fh);
+
+        Logger lg = LogManager.getLogManager().getLogger("");
+        lg.addHandler(fh);
 
 //        SimpleFormatter sFormat = new SimpleFormatter();
 //        fh.setFormatter(sFormat);
